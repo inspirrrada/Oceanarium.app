@@ -1,0 +1,137 @@
+*, *:after, *:before {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+}
+
+ul li {
+	list-style-type: none;
+}
+
+.clearfix::after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+img {
+	max-width: 100%;
+}
+
+@font-face {
+	font-family: "Roboto";
+	src: url("../fonts/RobotoRegular.ttf");
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Roboto";
+	src: url("../fonts/RobotoLight.ttf");
+	font-weight: 300;
+	font-style: normal;
+}
+
+
+body {
+	font-family: Roboto, Arial, sans-serif;
+	font-size: 18px;
+}
+
+.container {
+	max-width: 1170px;
+	margin: 0 auto;
+}
+
+header {
+	background: url("../img/bg-header.jpg") no-repeat;
+	padding: 42px 0;
+}
+
+nav {
+	padding: 0 0 0 28px;
+	background-color: #f2f2f2;
+	border-radius: 15px;
+}
+
+.logo {
+	float: left;
+	padding: 20px 0;
+}
+
+nav ul {
+	margin: 0 0 0 320px;
+}
+
+nav li {
+	display: inline-block;
+	font-family: "Roboto", sans-serif;
+	font-size: 18px;
+	line-height: 24px;
+	font-weight: 300;
+}
+
+nav li a {
+	display: block;
+	padding: 20px 20px;
+}
+
+nav a:hover {
+	border-left: 2px solid black;
+	border-right: 2px solid black;
+}
+
+nav .last:hover {
+	border-left: 2px solid black;
+	border-right: 0;
+}
+
+@media (max-width: 1199px) {
+	nav li a {
+		padding: 20px 5px;
+	}
+}
+
+@media (max-width: 991px) {
+	nav {
+		padding: 10px 28px;
+	}
+
+	.logo {
+		float: none;
+		text-align: center;
+		padding: 10px 0;
+	}
+
+	nav ul {
+		margin-left: 0;
+	}
+
+	nav li a {
+		padding: 10px 11px;
+	}
+
+	nav .last:hover {
+		border-right: 2px solid black;
+	}
+}
+
+@media (max-width: 750px) {
+	nav ul {
+		/*display: none;*/
+		text-align: center;
+	}
+
+	/*.logo {*/
+		/*text-align: left;*/
+	/*}*/
+
+	nav li {
+		font-size: 16px;
+	}
+}
