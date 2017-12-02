@@ -10,6 +10,9 @@ a {
 	text-decoration: none;
 	color: black;
 }
+a:hover, a:focus {
+	text-decoration: none;
+}
 
 ul li {
 	list-style-type: none;
@@ -53,21 +56,27 @@ body {
 header {
 	background: url("../img/bg-header.jpg") no-repeat;
 	padding: 42px 0;
+	/*position: relative;*/
 }
 
+/*header .container {*/
+	/*position: absolute;*/
+/*}*/
+
 nav {
-	padding: 0 0 0 28px;
+	padding: 0 25px 0;
 	background-color: #f2f2f2;
 	border-radius: 15px;
+	line-height: 70px;
 }
 
 .logo {
 	float: left;
-	padding: 20px 0;
 }
 
 nav ul {
-	margin: 0 0 0 320px;
+	margin: 0 0 0 200px;
+	text-align: right;
 }
 
 nav li {
@@ -80,17 +89,32 @@ nav li {
 
 nav li a {
 	display: block;
-	padding: 20px 20px;
+	padding: 0 18px;
+	position: relative;
+	line-height: 70px;
 }
+/*nav li a:before,nav li a:after{*/
+	/*content: "";*/
+	/*position: absolute;*/
+	/*top:0;*/
+	/*bottom: 0;*/
+	/*width: 2px;*/
+	/*background-color: #000;*/
+	/**/
+/*}*/
 
+nav a {
+	transition: border-color .1s ease-in;
+	border-left: 2px solid transparent;
+	border-right: 2px solid transparent;
+}
 nav a:hover {
-	border-left: 2px solid black;
-	border-right: 2px solid black;
+	border-color: black;
 }
 
 nav .last:hover {
-	border-left: 2px solid black;
-	border-right: 0;
+	/*border-left: 2px solid black;*/
+	border-right-color: transparent;
 }
 
 h1 {
@@ -139,7 +163,11 @@ header h2 {
 
 @media (max-width: 1200px) {
 	nav li a {
-		padding: 20px 5px;
+		padding: 0 10px;
+	}
+
+	nav ul {
+		margin-left: 50px;
 	}
 
 	.header-text {
@@ -150,21 +178,23 @@ header h2 {
 
 @media (max-width: 991px) {
 	nav {
-		padding: 10px 28px;
+		padding: 0 5px;
+		line-height: 50px;
+	}
+
+	nav li a {
+		line-height: 35px;
 	}
 
 	.logo {
 		float: none;
 		text-align: center;
-		padding: 10px 0;
+		padding: 0 5px;
 	}
 
 	nav ul {
 		margin-left: 0;
-	}
-
-	nav li a {
-		padding: 10px 11px;
+		text-align: center;
 	}
 
 	nav .last:hover {
@@ -326,4 +356,21 @@ header h2 {
 		line-height: 20px;
 	}
 
+}
+
+@media (max-width: 243px) {
+	nav li {
+		display: block;
+		border: none;
+		border-top: 1px solid gray;
+	}
+
+	nav li:first-child {
+		border-top: none;
+	}
+
+	nav a:hover {
+		border-color: transparent;
+		background-color: #dbdbdb;
+	}
 }
