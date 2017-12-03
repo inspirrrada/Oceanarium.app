@@ -161,6 +161,68 @@ header h2 {
 	padding: 0 25px;
 }
 
+main {
+	background-color: #f2f2f2;
+}
+
+main .screen-2 {
+	padding: 4% 6% 2% 4%;
+}
+
+.screen-2 h2 {
+	font-size: 48px;
+	line-height: 24px;
+	color: #272727;
+	text-transform: uppercase;
+	font-weight: normal;
+	text-align: center;
+}
+
+.animals {
+	margin-top: 7%;
+}
+
+.animal-img {
+	text-align: right;
+	vertical-align: middle;
+	padding-right: 10%;
+	min-height: 154px;
+	position: relative;
+}
+
+.animal-img img {
+	position: absolute;
+	top: 0;
+	left: 25%;
+	bottom: 0;
+	right: 0;
+	margin: auto;
+}
+
+.animal-text {
+	text-align: center;
+	margin-bottom: 15%;
+}
+
+h3 {
+	margin: 0;
+}
+
+.animal-text h3 {
+	font-size: 30px;
+	line-height: 28px;
+	color: #362d2a;
+	text-transform: uppercase;
+	font-weight: normal;
+}
+
+.animal-text p {
+	font-size: 14px;
+	line-height: 24px;
+	color: #202020;
+}
+
+
 @media (max-width: 1200px) {
 	nav li a {
 		padding: 0 10px;
@@ -211,15 +273,7 @@ header h2 {
 	}
 }
 
-@media (max-width: 750px) {
-	nav ul {
-		text-align: center;
-	}
 
-	nav li {
-		font-size: 16px;
-	}
-}
 
 @media (max-width: 1020px) {
 	h1 {
@@ -243,6 +297,36 @@ header h2 {
 	}
 }
 
+@media (max-width: 767px) {
+	.screen-2 h2 {
+		font-size: 40px;
+		line-height: 45px;
+	}
+
+	.animal-img img {
+		left: 20%;
+	}
+
+	.animal-text {
+		margin-bottom: 5%;
+	}
+
+	.animal-text h3 {
+		font-size: 24px;
+		line-height: 20px;
+	}
+}
+
+@media (max-width: 750px) {
+	nav ul {
+		text-align: center;
+	}
+
+	nav li {
+		font-size: 16px;
+	}
+}
+
 @media (max-width: 600px) {
 	h1 {
 		font-size: 70px;
@@ -252,6 +336,12 @@ header h2 {
 	header h2 {
 		font-size: 35px;
 		margin-bottom: 140px;
+	}
+}
+
+@media (max-width: 588px) {
+	.animal-img img {
+		padding-right: 0;
 	}
 }
 
@@ -274,6 +364,10 @@ header h2 {
 
 	header h2 {
 		font-size: 20px;
+	}
+
+	.animal-img img {
+		left: 35%;
 	}
 }
 
