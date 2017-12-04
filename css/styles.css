@@ -400,7 +400,7 @@ main .screen-4 {
 
 .event-description {
 	padding: 25px 20px;
-	background-color: #343942;font-size: 16px;
+	background-color: #22262e;font-size: 16px;
 	line-height: 19px;
 	position: absolute;
 	bottom: 1%;
@@ -421,6 +421,105 @@ main .screen-4 {
 
 .col-xs-12 {
 	/*width: 0;*/
+}
+
+
+
+main .screen-6 {
+	padding: 3% 0;
+	text-align: center;
+}
+
+.screen-6 h2 {
+	font-size: 48px;
+	line-height: 24px;
+	text-transform: uppercase;
+	color: #272727;
+	font-weight: normal;
+	margin-bottom: 4%;
+}
+
+.screen-6 p {
+	font-size: 18px;
+	line-height: 36px;
+	font-weight: 100;
+	margin-bottom: 30px;
+}
+
+.guide-info {
+	background-color: #22262e;
+}
+
+.guide-info .name {
+	font-size: 18px;
+	/*line-height: 36px;*/
+	color: white;
+	width: 100%;
+}
+
+.guide-info {
+	text-align: left;
+	padding: 15px 10px 20px 15px;
+}
+
+.guide-img {
+	display: inline-block;
+	margin-bottom: 3%;
+}
+
+.guide-info .profession {
+	font-size: 12px;
+	/*line-height: 36px;*/
+	text-transform: uppercase;
+	color: #00ddfe;
+}
+
+.guide-contacts {
+	display: inline-block;
+	text-align: right;
+	vertical-align: middle;
+	font-size: 0;
+  float: right;
+
+}
+
+.guide-contacts a {
+	display: inline-block;
+	width: 24px;
+	height: 24px;
+	background: url("../img/social-sprite.png");
+	margin-left: 2px;
+}
+
+.guide-contacts .fb {
+	background-position: 0;
+}
+
+.guide-contacts .fb:hover {
+
+	background-position: 161px;
+}
+
+.guide-contacts .tw {
+	background-position: 129px;
+}
+
+.guide-contacts .tw:hover {
+	background-position: 97px;
+}
+
+.guide-contacts .google {
+	background-position: 65px;
+}
+
+.guide-contacts .google:hover {
+	background-position: 33px;
+}
+
+.col-lg-3 {
+	padding-left: 3px;
+	padding-right: 3px;
+
 }
 
 @media (max-width: 1200px) {
@@ -484,6 +583,12 @@ main .screen-4 {
 		padding: 18px 14px
 	}
 
+	.guide-info .name {
+		font-size: 14px;
+		font-weight: bold;
+	}
+
+
 }
 
 @media (max-width: 1020px) {
@@ -511,6 +616,20 @@ main .screen-4 {
 
 	.tr-radius {
 		border-top-right-radius: 0;
+	}
+
+	.guide-info .name {
+		font-size: 18px;
+		font-weight: normal;
+	}
+
+	.screen-6 p {
+		font-size: 16px;
+	}
+
+	.screen-6 h2 {
+		font-size: 40px;
+		line-height: 20px;
 	}
 }
 
@@ -589,6 +708,14 @@ main .screen-4 {
 	.period img {
 		right: 30px;
 	}
+
+	.screen-6 p {
+		line-height: 30px;
+	}
+
+	.screen-6 h2 {
+		margin-bottom: 6%;
+	}
 }
 
 @media (max-width: 660px) {
@@ -636,6 +763,16 @@ main .screen-4 {
 
 	.header-text {
 		top: 5%;
+	}
+
+	.screen-6 p {
+		line-height: 27px;
+		font-size: 15px;
+	}
+
+	.screen-6 h2 {
+		margin-bottom: 8%;
+		font-size: 35px;
 	}
 
 
@@ -686,6 +823,14 @@ main .screen-4 {
 
 	.pages {
 		font-size: 20px;
+	}
+
+	.screen-6 p {
+		line-height: 23px;
+	}
+
+	.screen-6 h2 {
+		line-height: 35px;
 	}
 }
 
