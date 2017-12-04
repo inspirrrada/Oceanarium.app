@@ -267,6 +267,161 @@ main .screen-3 {
 	margin: 13% 0 7% 0;
 }
 
+main .screen-4 {
+	padding: 2% 0 4% 0;
+}
+
+.screen-4 h2 {
+	font-size: 48px;
+	line-height: 24px;
+	color: #272727;
+	text-transform: uppercase;
+	font-weight: normal;
+	text-align: center;
+	margin-bottom: 4%;
+}
+
+.period {
+	text-align: center;
+}
+
+.screen-4 ul {
+	margin-bottom: 3%;
+}
+
+.screen-4 li {
+	display: inline-block;
+	font-size: 24px;
+	line-height: 24px;
+	font-weight: 100;
+	position: relative;
+}
+
+.period img {
+	position: absolute;
+	bottom: 20px;
+	right: 70px;
+}
+
+.marker:before {
+	content: "";
+	display: inline-block;
+	width: 5px;
+	height: 5px;
+	border-radius: 3px;
+	background-color: black;
+	vertical-align: middle;
+	margin-right: 40px;
+	margin-left: 40px;
+}
+
+.marker:after {
+	content: "";
+	display: inline-block;
+	width: 5px;
+	height: 5px;
+	border-radius: 3px;
+	background-color: black;
+	vertical-align: middle;
+	margin-right: 40px;
+	margin-left: 40px;
+}
+
+.screen-4 li:hover {
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+.pages {
+	text-align: right;
+	margin-bottom: 2%;
+	font-size: 24px;
+	line-height: 30px;
+	font-weight: 300;
+}
+
+.pages span:hover {
+	color: #2aabd2;
+	cursor: pointer;
+}
+
+.future-events {
+	text-align: center;
+}
+
+.tl-radius {
+	border-top-left-radius: 20px;
+}
+
+.tr-radius {
+	border-top-right-radius: 20px;
+}
+
+.bl-radius {
+	border-bottom-left-radius: 20px;
+}
+
+.br-radius {
+	border-bottom-right-radius: 20px;
+}
+
+.event-img {
+	position: relative;
+	min-height: 375px;
+	margin-bottom: 20px;
+	/*width: 100%;*/
+}
+
+.event-img img {
+	min-height: 315px;
+}
+
+.event-date {
+	position: absolute;
+	background-color: #00c0ff;
+	color: white;
+	font-weight: 700;
+	text-align: center;
+	padding: 18px 10px 15px 10px;
+	border-top-right-radius: 20px;
+	bottom: 27%;
+}
+
+.date-day {
+	font-size: 41px;
+	line-height: 34px;
+}
+
+.date-month {
+	font-size: 14px;
+	text-transform: uppercase;
+	font-weight: 300;
+}
+
+.event-description {
+	padding: 25px 20px;
+	background-color: #343942;font-size: 16px;
+	line-height: 19px;
+	position: absolute;
+	bottom: 1%;
+	width: 100%;
+}
+
+.event-description h4 {
+	color: white;
+	text-transform: uppercase;
+	margin-top: 0;
+}
+
+.event-description p {
+	color: #b1b1b1;
+	font-weight: 100;
+	margin-bottom: 0;
+}
+
+.col-xs-12 {
+	/*width: 0;*/
+}
 
 @media (max-width: 1200px) {
 	nav li a {
@@ -325,6 +480,10 @@ main .screen-3 {
 		font-size: 28px;
 	}
 
+	.event-description {
+		padding: 18px 14px
+	}
+
 }
 
 @media (max-width: 1020px) {
@@ -334,6 +493,24 @@ main .screen-3 {
 
 	header h2 {
 		font-size: 55px;
+	}
+}
+
+@media (max-width: 991px) {
+	.bl-radius {
+		border-bottom-left-radius: 0;
+	}
+
+	.br-radius {
+		border-bottom-right-radius: 0;
+	}
+
+	.tl-radius {
+		border-top-left-radius: 0;
+	}
+
+	.tr-radius {
+		border-top-right-radius: 0;
 	}
 }
 
@@ -367,6 +544,18 @@ main .screen-3 {
 		font-size: 24px;
 		line-height: 20px;
 	}
+
+	.event-img {
+		display: inline-block;
+	}
+
+	.event-description {
+		bottom: 6%;
+	}
+
+	.pages {
+		text-align: center;
+	}
 }
 
 @media (max-width: 750px) {
@@ -380,6 +569,25 @@ main .screen-3 {
 
 	.screen-3 h2 {
 		margin: 9% 0 7% 0;
+	}
+
+	.screen-4 h2 {
+		font-size: 40px;
+		line-height: 45px;
+	}
+
+	.marker:before {
+		margin-right: 20px;
+		margin-left: 20px;
+	}
+
+	.marker:after {
+		margin-right: 20px;
+		margin-left: 20px;
+	}
+
+	.period img {
+		right: 30px;
 	}
 }
 
@@ -457,6 +665,28 @@ main .screen-3 {
 		font-size: 16px;
 		line-height: 20px;
 	}
+
+	.screen-4 li {
+		font-size: 20px;
+	}
+
+	.marker:before {
+		margin-right: 8px;
+		margin-left: 8px;
+	}
+
+	.marker:after {
+		margin-right: 8px;
+		margin-left: 8px;
+	}
+
+	.period img {
+		right: 10px;
+	}
+
+	.pages {
+		font-size: 20px;
+	}
 }
 
 @media (max-width: 390px) {
@@ -485,6 +715,35 @@ main .screen-3 {
 	.screen-3 h2 {
 		font-size: 25px;
 		line-height: 30px;
+	}
+}
+
+@media (max-width: 377px) {
+	.event-description {
+		font-size: 14px;
+		line-height: 16px;
+		padding: 18px 5px;
+	}
+
+	.event-description h4 {
+		font-size: 16px;
+	}
+
+	.screen-4 li {
+		display: block;
+	}
+
+	.period img {
+		display: none;
+	}
+
+	.marker:before,
+	.marker:after {
+		display: none;
+	}
+
+	.screen-4 h2 {
+		font-size: 30px;
 	}
 }
 
