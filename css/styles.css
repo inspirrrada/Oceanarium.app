@@ -54,9 +54,9 @@ body {
 }
 
 header {
-	background: url("../img/bg-header.jpg") no-repeat;
+	background: url("../img/bg-header.jpg");
 	padding: 42px 0;
-	/*position: relative;*/
+	background-size: cover;
 }
 
 /*header .container {*/
