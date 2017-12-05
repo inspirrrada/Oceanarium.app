@@ -523,7 +523,7 @@ main .screen-6 {
 }
 
 main .screen-7 {
-	padding: 3% 0;
+	padding: 3% 0 4% 0;
 	text-align: center;
 }
 
@@ -635,8 +635,7 @@ input[type=email] {
 	opacity: .5;
 }
 
-main .screen-8 {
-	padding-top: 1%;
+footer .screen-8 {
 	text-align: center;
 }
 
@@ -695,6 +694,16 @@ main .screen-8 {
 	display: block;
 	background-color: rgba(0,0,0,0.5);
 	cursor: pointer;
+}
+
+footer .screen-9 {
+	text-align: center;
+	background-color: #22262e;
+	color: white;
+	font-size: 24px;
+	line-height: 30px;
+	font-weight: 300;
+	padding: 45px 0;
 }
 
 @media (max-width: 1200px) {
