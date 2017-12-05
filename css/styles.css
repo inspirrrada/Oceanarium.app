@@ -635,7 +635,67 @@ input[type=email] {
 	opacity: .5;
 }
 
+main .screen-8 {
+	padding-top: 1%;
+	text-align: center;
+}
 
+.screen-8 .col-lg-3 {
+	padding-left: 0;
+	padding-right: 0;
+}
+.screen-8 .photo {
+	height: 338px;
+	width: 345px;
+}
+
+/*.screen-8 img:hover {*/
+	/*min-height: 338px;*/
+/*}*/
+
+.photo-block {
+	position: relative;
+	display: inline-block;
+	/*margin-bottom: 3%;*/
+}
+
+.photo-block img {
+	vertical-align: middle;
+}
+
+.hover-block {
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	/*max-width: 100%;*/
+	/*max-height: 100%;*/
+	display: none;
+	font-size: 0;
+	line-height: 250px;
+}
+
+.hover-block img {
+	vertical-align: middle;
+}
+
+/*.photo-block .hover {*/
+	/*position: absolute;*/
+	/*top: 15%;*/
+	/*left: 30%;*/
+	/*bottom: 0;*/
+	/*right: 0;*/
+	/*display: none;*/
+/*}*/
+
+.photo-block:hover .hover-block {
+	display: block;
+	background-color: rgba(0,0,0,0.5);
+	cursor: pointer;
+}
 
 @media (max-width: 1200px) {
 	nav li a {
@@ -842,6 +902,10 @@ input[type=email] {
 
 	.pages {
 		text-align: center;
+	}
+
+	.photo-block {
+		margin-bottom: 3%;
 	}
 }
 
