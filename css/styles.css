@@ -423,6 +423,121 @@ main .screen-4 {
 	/*width: 0;*/
 }
 
+main .screen-5 {
+	padding: 3% 0;
+	text-align: center;
+}
+
+.screen-5 h2 {
+	font-size: 48px;
+	line-height: 24px;
+	text-transform: uppercase;
+	color: #272727;
+	font-weight: normal;
+	margin-bottom: 6%;
+}
+
+.prices table{
+	background-color: #22262e;
+	padding: 25px 0 25px 25px;
+	color: #99999a;
+	margin-bottom: 5%;
+}
+
+tr {
+	border-bottom: 1px dotted white;
+}
+
+.first {
+	font-size: 18px;
+	line-height: 36px;
+	color: #b7b7b7;
+	font-weight: 100;
+	text-align: left;
+	width: 305px;
+	padding-left: 25px;
+}
+
+.first:before {
+	content: "";
+	display: inline-block;
+	width: 5px;
+	height: 5px;
+	border-radius: 3px;
+	background-color: #01bbf8;
+	vertical-align: middle;
+	margin-right: 12px;
+}
+
+.second {
+	font-size: 14px;
+	line-height: 30px;
+	color: white;
+	font-weight: 100;
+	text-align: right;
+	padding-right: 25px;
+	width: 96px;
+}
+
+.fix-1 {
+	padding-top: 15px;
+
+}
+
+.fix-2 {
+	padding-bottom: 15px;
+}
+
+.event-time {
+	text-align: left;
+}
+
+.event-time img {
+	margin-right: 2%;
+}
+
+.event-time h4{
+	font-size: 30px;
+	line-height: 40px;
+	color: #22262e;
+	display: inline-block;
+	margin-top: 0;
+	margin-bottom: 2%;
+}
+
+.event-info {
+	margin-left: 18%;
+	text-align: left;
+	margin-bottom: 35px;
+}
+
+.event-info ul li {
+font-size: 18px;
+	line-height: 36px;
+	text-transform: uppercase;
+	font-weight: 100;
+	list-style-type: disc;
+}
+
+.event-info span {
+	font-weight: bold;
+}
+
+.event-info p {
+	margin-left: -3%;
+	font-size: 18px;
+	line-height: 30px;
+	font-weight: 100;
+}
+
+
+
+
+/*.prices ul li {*/
+
+	/*list-style-type: disc;*/
+	/**/
+/*}*/
 
 
 main .screen-6 {
@@ -855,6 +970,10 @@ footer .screen-9 {
 		margin-bottom: 4%;
 	}
 
+	.event-time h4 {
+		font-size: 25px;
+	}
+
 
 }
 
@@ -915,6 +1034,10 @@ footer .screen-9 {
 
 	.photo-block {
 		margin-bottom: 3%;
+	}
+
+	.screen-5 h2 {
+		font-size: 40px;
 	}
 }
 
@@ -1098,6 +1221,15 @@ footer .screen-9 {
 	.screen-6 h2 {
 		line-height: 35px;
 	}
+
+	.event-time {
+		text-align: center;
+	}
+
+	.screen-5 h2 {
+		line-height: 35px;
+		font-size: 35px;
+	}
 }
 
 @media (max-width: 390px) {
@@ -1165,6 +1297,10 @@ footer .screen-9 {
 
 	.screen-4 h2 {
 		font-size: 30px;
+	}
+
+	.event-time h4 {
+		font-size: 21px;
 	}
 }
 
