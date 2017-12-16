@@ -52,20 +52,30 @@ body {
 	overflow: hidden;
 }
 
+/*.datepicker-here {*/
+	/*inline: true;*/
+/*}*/
+
 .container {
 	max-width: 1170px;
 	margin: 0 auto;
 }
 
 header {
-	background: url("../img/bg-header.jpg");
-	padding: 42px 0;
+	/*background: url("../img/bg-header.jpg");*/
+	/*padding: 42px 0;*/
 	background-size: cover;
+	position: relative;
+	min-height: 100vh;
 }
 
-/*header .container {*/
-	/*position: absolute;*/
-/*}*/
+header .container {
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	padding: 42px 0;
+}
 
 nav {
 	padding: 0 25px 0;
@@ -439,6 +449,10 @@ main .screen-5 {
 	color: #272727;
 	font-weight: normal;
 	margin-bottom: 6%;
+}
+
+.prices {
+	margin-top: 60px;
 }
 
 .prices table{
