@@ -1,4 +1,4 @@
-@charset 'UTF-8';
+@charset "UTF-8";
 /* Slider */
 .slick-loading .slick-list
 {
@@ -40,6 +40,8 @@
     border: none;
     outline: none;
     background: transparent;
+
+    z-index: 2;
 }
 .slick-prev:hover,
 .slick-prev:focus,
@@ -79,7 +81,7 @@
 
 .slick-prev
 {
-    left: -25px;
+    left: 75px;
 }
 [dir='rtl'] .slick-prev
 {
@@ -88,7 +90,7 @@
 }
 .slick-prev:before
 {
-    content: '←';
+    content: url("../../img/go_left.png");
 }
 [dir='rtl'] .slick-prev:before
 {
@@ -97,7 +99,7 @@
 
 .slick-next
 {
-    right: -25px;
+    right: 100px;
 }
 [dir='rtl'] .slick-next
 {
@@ -106,7 +108,7 @@
 }
 .slick-next:before
 {
-    content: '→';
+    content: url("../../img/go_right.png");
 }
 [dir='rtl'] .slick-next:before
 {
@@ -201,4 +203,14 @@
 {
     opacity: .75;
     color: black;
+}
+
+@media (max-width: 1199px)  {
+	.slick-prev:before {
+		display: none;
+	}
+
+	.slick-next:before {
+		display: none;
+	}
 }

@@ -66,7 +66,7 @@ header {
 	/*padding: 42px 0;*/
 	background-size: cover;
 	position: relative;
-	min-height: 100vh;
+	/*min-height: 100vh;*/
 }
 
 header .container {
@@ -75,6 +75,7 @@ header .container {
 	right: 0;
 	top: 0;
 	padding: 42px 0;
+	height: 100%;
 }
 
 nav {
@@ -83,6 +84,10 @@ nav {
 	border-radius: 15px;
 	line-height: 70px;
 }
+
+/*.heading-block {*/
+	/*position: absolute;*/
+/*}*/
 
 .logo {
 	float: left;
@@ -137,18 +142,20 @@ h1 {
 	color: white;
 	text-transform: uppercase;
 	text-align: center;
-	margin-top: 250px;
+	margin-top: 200px;
 }
 
 header h2 {
 	font-size: 72px;
 	color: white;
 	text-align: center;
-	margin-bottom: 240px;
+	margin-bottom: 125px;
 }
 
 .header-text-wrap {
-	position: relative;
+	position: absolute;
+	bottom: 0;
+	margin-bottom: 3%;
 }
 
 .header-text {
@@ -859,41 +866,6 @@ footer .screen-9 {
 	}
 }
 
-@media (max-width: 991px) {
-	nav {
-		padding: 0 5px;
-		line-height: 50px;
-	}
-
-	nav li a {
-		line-height: 35px;
-	}
-
-	.logo {
-		float: none;
-		text-align: center;
-		padding: 0 5px;
-	}
-
-	nav ul {
-		margin-left: 0;
-		text-align: center;
-	}
-
-	nav .last:hover {
-		border-right: 2px solid black;
-	}
-
-	.header-text-wrap img {
-		min-height: 230px;
-	}
-
-	.header-text h3 {
-		font-size: 40px;
-		line-height: 15px;
-	}
-}
-
 @media (max-width: 1199px) {
 
 	.animal-text h3 {
@@ -927,6 +899,10 @@ footer .screen-9 {
 
 	.contact-info span {
 		margin-left: 10px;
+	}
+
+	.header-text-wrap {
+		display: none;
 	}
 
 
@@ -997,17 +973,57 @@ footer .screen-9 {
 		font-size: 25px;
 	}
 
+	h1 {
+		margin-top: 150px;
+		font-size: 90px;
+	}
+
+	nav {
+		padding: 0 5px;
+		line-height: 50px;
+	}
+
+	nav li a {
+		line-height: 35px;
+	}
+
+	.logo {
+		float: none;
+		text-align: center;
+		padding: 0 5px;
+	}
+
+	nav ul {
+		margin-left: 0;
+		text-align: center;
+	}
+
+	nav .last:hover {
+		border-right: 2px solid black;
+	}
+
+	.header-text-wrap img {
+		min-height: 230px;
+	}
+
+	.header-text h3 {
+		font-size: 40px;
+		line-height: 15px;
+	}
+
+
+
 
 }
 
 @media (max-width: 780px) {
 	h1 {
-		font-size: 90px;
-		margin-top: 200px;
+		font-size: 70px;
+		margin-top: 50px;
 	}
 
 	header h2 {
-		font-size: 45px;
+		font-size: 35px;
 		margin-bottom: 190px;
 	}
 
@@ -1061,6 +1077,10 @@ footer .screen-9 {
 
 	.screen-5 h2 {
 		font-size: 40px;
+	}
+
+	.screen-8 .photo {
+		width: auto;
 	}
 }
 
@@ -1127,23 +1147,35 @@ footer .screen-9 {
 
 @media (max-width: 600px) {
 	h1 {
-		font-size: 70px;
-		margin-top: 150px;
+		font-size: 50px;
+		margin-top: 30px;
+		margin-bottom: 0;
 	}
 
 	header h2 {
 		font-size: 35px;
-		margin-bottom: 140px;
+		margin-bottom: 0;
+		margin-top: 0;
 	}
 }
 
 @media (max-width: 588px) {
+
+	/*.header h2 {*/
+		/*display: none;*/
+	/*}*/
+
 	.animal-img img {
 		padding-right: 0;
 	}
 }
 
 @media (max-width: 554px) {
+
+	header h2 {
+		display: none;
+	}
+
 	.header-text-wrap img {
 		min-height: 400px;
 	}
@@ -1192,9 +1224,7 @@ footer .screen-9 {
 
 @media (max-width: 465px) {
 	h1 {
-		font-size: 50px;
-		line-height: 20px;
-		font-weight: bold;
+		display: none;
 	}
 
 	header h2 {
@@ -1328,6 +1358,11 @@ footer .screen-9 {
 }
 
 @media (max-width: 350px) {
+
+	nav li {
+		font-size: 14px;
+	}
+
 	h1 {
 		font-size: 40px;
 	}
